@@ -1,0 +1,136 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+
+  body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #ff0080, #7928ca, #00c1d6, #202926);
+      /* background: linear-gradient(-45deg, #2ec4b6, #4361ee, #8338ec, #ff6b6b); */
+      background-size: 400% 400%;
+      animation: bg 10s ease infinite;
+  }
+
+  @keyframes bg {
+      0% {
+          background-position: 0% 50%
+      }
+
+      50% {
+          background-position: 100% 50%
+      }
+
+      100% {
+          background-position: 0% 50%
+      }
+  }
+
+
+  .heading {
+
+      font-family: "Ewert", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 190%;
+      margin: 20px 0px 30px;
+
+  }
+
+
+  .heading:hover {
+      text-shadow: 2px 6px 9px gray;
+  }
+
+
+  .card-box {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      padding: 25px;
+      border-radius: 15px;
+      width: 95%;
+      max-width: 650px;
+      color: white;
+      animation: fade 1s ease;
+  }
+
+  @keyframes fade {
+      from {
+          opacity: 0;
+          transform: translateY(20px)
+      }
+
+      to {
+          opacity: 1;
+          transform: translateY(0)
+      }
+  }
+
+
+  .month {
+      font-family: "Rubik Glitch Pop", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 150%;
+  }
+
+
+  .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      margin-top: 10px;
+      font-family: "UnifrakturMaguntia", cursive;
+
+  }
+
+
+  .day {
+      background: white;
+      color: black;
+      padding: 8px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+
+  .day:hover {
+      background: #ffd369;
+      transform: scale(1.1);
+      font-size: 18px;
+  }
+
+
+  .form-select {
+      font-family: "Trade Winds", system-ui;
+  }
+
+
+  button {
+      transition: 0.3s;
+      font-family: "Trade Winds", system-ui;
+  }
+
+
+  button:hover {
+      transform: scale(1.05);
+  }
+
+  
+  .arrow {
+      cursor: pointer;
+      font-size: 22px;
+  }
