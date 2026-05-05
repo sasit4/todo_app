@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #89f7fe, #a18cd1);
+    font-family: "Trade Winds", system-ui !important;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    filter: blur(120px);
+    top: 10%;
+    left: 20%;
+}
+
+.container {
+    width: 50% !important;
+    /* background: rgba(0, 0, 0, 0.8); */
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+
+.list-group-item {
+    background: #1c1c1c;
+    color: white;
+    border: none;
+    margin-top: 6px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
