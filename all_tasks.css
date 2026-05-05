@@ -1,0 +1,88 @@
+    @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+
+    body {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        min-height: 100vh;
+        color: white;
+        animation: fadeIn 0.8s ease;
+        font-family: "Trade Winds", system-ui;
+
+    }
+
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px)
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    }
+
+
+    .container-box {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .task-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        background: rgba(255, 255, 255, 0.15);
+        transition: 0.3s;
+        animation: slideUp 0.4s ease;
+    }
+
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(20px);
+            opacity: 0
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1
+        }
+    }
+
+
+    .task-item:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+
+
+    .completed {
+        text-decoration: line-through;
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+
+    .btn-danger {
+        transition: 0.3s;
+    }
+
+    .btn-danger:hover {
+        transform: scale(1.1) rotate(-5deg);
+    }
+
+
+    input[type="checkbox"] {
+        transform: scale(1.2);
+        margin-right: 10px; 
+        cursor: pointer;
+    }
